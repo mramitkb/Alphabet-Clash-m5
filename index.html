@@ -24,7 +24,7 @@
 <body>
     <main class="bg-[#010313] bg-[url('./images/background.png')] bg-no-repeat bg-center min-h-screen">
         <!-- Home -->
-        <section class="flex flex-col items-center justify-center min-h-screen text-white space-y-8 hidden">
+        <section class="flex flex-col items-center justify-center min-h-screen text-white space-y-8">
             <h1 class="text-9xl anton">ALPHABET CLASH</h1>
             <p class="text-gray-400">Unleash Your Keyboard Kung Fu : Press <span
                     class="font-bold text-white">"Enter</span> to Play
@@ -32,7 +32,7 @@
             <button class="btn font-bold">Play Now</button>
         </section>
         <!-- Playground -->
-        <section class="flex flex-col items-center justify-center min-h-screen space-y-4 py-20 lg:space-y-20">
+        <section class="flex flex-col items-center justify-center min-h-screen space-y-4 py-20 lg:space-y-20 hidden">
             <!-- Screen -->
             <div
                 class="artboard artboard-horizontal phone-5 bg-[#FFFFFFB3] border-[16px] border-[#262733] rounded-2xl text-center">
@@ -94,8 +94,12 @@
             </div>
         </section>
         <!-- Final Score -->
-        <section>
-
+        <section class="flex min-h-screen items-center justify-center hidden">
+            <div class="bg-[#623BB0] text-white p-12 rounded-xl text-center space-y-3">
+                <h1 class="text-6xl font-bold">Score : <span class="font-medium">0</span></h1>
+                <button class="btn font-bold">Play Now</button>
+                <p class="text-sm">Practice will make you Pro!</p>
+            </div>
         </section>
     </main>
 </body>
